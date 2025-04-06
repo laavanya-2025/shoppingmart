@@ -19,7 +19,8 @@ const [sortType,setSortType]=useState('relevant');
 const toggleCategory=(e) =>{
 
   if(category.includes(e.target.value)){
-    setCategory(prev=> prev.filter(item=>item !== e.target.valve))
+    setCategory(prev => prev.filter(item => item !== e.target.value));
+
 }
   else{
     setCategory(prev=>[...prev,e.target.value])

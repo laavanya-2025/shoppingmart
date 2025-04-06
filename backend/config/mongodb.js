@@ -4,7 +4,7 @@ const connectDB = async () => {
   mongoose.connection.on("connected", () => {
     console.log("DB Connected");
   });
-  await mongoose.connect(`${process.env.MONGODB_URL}/vayuratha`);
+  await mongoose.connect(`${process.env.MONGODB_URL}/shoppingmart`);
 };
 
 export default connectDB;
